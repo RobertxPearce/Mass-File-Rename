@@ -9,8 +9,8 @@ def rename_files_in_folder(folder_path):
     
     # Loop to iterate through file.
     for file_name in files:
-        # Create new file name with counter.
-        new_file_name = f"Covers_{counter:03d}{os.path.splitext(file_name)[1]}"
+        # Create new file name with counter. ***UPDATE NAMING CONVENTION***
+        new_file_name = f"NAME_{counter:03d}{os.path.splitext(file_name)[1]}"
         
         # Create the full file paths.
         old_file_path = os.path.join(folder_path, file_name)
